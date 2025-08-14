@@ -1,0 +1,17 @@
+fastapi
+uvicorn[standard]
+httpx
+python-dotenv
+pydantic
+SQLAlchemy
+databases
+asyncpg
+alembic
+spaCy
+requests
+openai
+sentence-transformers
+python-multipart
+psycopg2-binary
+pydantic-settings
+groq
