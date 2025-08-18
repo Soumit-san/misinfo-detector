@@ -16,5 +16,4 @@ python-multipart
 psycopg2-binary
 pydantic-settings
 groq
-# Ensure blis uses prebuilt wheel (no compiling)
 blis==0.7.11
