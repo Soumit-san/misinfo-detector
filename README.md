@@ -1,6 +1,3 @@
-<img width="831" height="602" alt="image" src="https://github.com/user-attachments/assets/c7c881bb-c02e-474e-9c18-550d2d87dfaf" /># Misinfo Detector Backend (MVP)
-
-This repository contains a FastAPI backend scaffold for an AI-powered misinformation detection tool.
 
 ## Features
 - Accepts a text/article input and extracts candidate claims
@@ -8,7 +5,7 @@ This repository contains a FastAPI backend scaffold for an AI-powered misinforma
 - Uses an LLM (GROQ) to synthesize verdict and explanation
 - Stores checks in PostgreSQL
 
-##Workflow
+## Workflow
                 ┌──────────────────────┐
                 │      User (Web)      │
                 │  React Frontend UI   │
@@ -22,11 +19,11 @@ This repository contains a FastAPI backend scaffold for an AI-powered misinforma
                           │
         ┌─────────────────┼──────────────────┐
         ▼                 ▼                  ▼
-┌──────────────┐  ┌──────────────┐  ┌──────────────────┐
-│ Claim        │  │ Fact Checker │  │ LLM Verifier     │
-│ Extractor    │  │ (News/Wiki)  │  │ (Groq/OpenAI)    │
-│ (spaCy NLP)  │  │              │  │                  │
-└──────┬───────┘  └──────┬───────┘  └────────┬─────────┘
+     ┌──────────────┐  ┌──────────────┐  ┌──────────────────┐
+     │ Claim        │  │ Fact Checker │  │ LLM Verifier     │
+     │ Extractor    │  │ (News/Wiki)  │  │ (Groq/OpenAI)    │
+     │ (spaCy NLP)  │  │              │  │                  │
+     └──────┬───────┘  └──────┬───────┘  └────────┬─────────┘
        │                  │                  │
        └──────────┬───────┴──────────┬───────┘
                   ▼                  ▼
