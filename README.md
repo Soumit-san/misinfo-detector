@@ -44,31 +44,31 @@
                 │ (Result + Sources)   │
                 └──────────────────────┘
 ## Pipeline
-User Input (Claim/Text)
+    User Input (Claim/Text)
         │
         ▼
-[1] Preprocessing Layer
+    [1] Preprocessing Layer
     - Clean text
     - Normalize input
 
         ▼
-[2] Claim Extraction (spaCy)
+    [2] Claim Extraction (spaCy)
     - Identify meaningful claims
     - Split multi-claim text
 
         ▼
-[3] Fact Retrieval
+    [3] Fact Retrieval
     - Query News APIs
     - Query Wikipedia
     - Fetch fact-check sources
 
         ▼
-[4] Semantic Matching (Optional)
+    [4] Semantic Matching (Optional)
     - Sentence Transformers
     - Similarity scoring with known facts
 
         ▼
-[5] LLM Verification (Core AI)
+    [5] LLM Verification (Core AI)
     - Input: Claim + Retrieved Evidence
     - Output:
         ✔ Verdict (True / False / Misleading)
@@ -76,23 +76,23 @@ User Input (Claim/Text)
         ✔ Explanation
 
         ▼
-[6] Post-processing
+    [6] Post-processing
     - Format response
     - Attach sources
     - Structure JSON
 
         ▼
-[7] Database Storage
+    [7] Database Storage
     - Save claim
     - Save verdict + explanation
     - Save timestamp
 
         ▼
-[8] API Response
+    [8] API Response
     - Return structured result
 
         ▼
-[9] Frontend Rendering
+    [9] Frontend Rendering
     - Show verdict badge
     - Show confidence bar
     - Show explanation
